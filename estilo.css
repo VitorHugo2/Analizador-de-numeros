@@ -13,10 +13,13 @@ section{
     background: white;
     width: 70%;
     margin: auto;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 20px black;
 
+}
+#sele{
+    width: 150px;
 }
 
 footer{
