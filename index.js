@@ -36,6 +36,21 @@ function finalizar(){
     if(sele.childElementCount == 0){
         alert("Adicione pelo menos um valor na lista para ver o resultado")
     }else{
-        
+        let valorTotal = valores.length
+        let maior = 1
+        let menor = 100
+        let soma = 0
+        for(let i = 0; i < valores.length; i++){
+            if(valores[i] < menor){
+                menor = valores[i]
+            }
+            if(valores[i] > maior ){
+                maior = valores[i]
+            }
+            soma += valores[i]
+        }
+        let media = soma / valores.length
+
+        document.getElementById("result").innerHTML = `<br><br>O maior valor informado foi ${maior}<br><br>O menor valor informado foi ${menor}<br><br>A soma de todos os valores é ${soma}<br><br>A media entre os valores é ${media}`
     }
 }
