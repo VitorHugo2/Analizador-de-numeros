@@ -15,12 +15,18 @@
 
     <section>
         <div>
-            ola
-        </div>
-        <div>
+            <p>
+                <label for="numero">Valor(1 a 100):</label>
+                <input type="number" name="numero" id="numero" placeholder="Ex:5">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+            </p>
             <select size="10" name="sele" id="sele">
                 
-            </select>
+            </select><br>
+            <input id="btn" type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div>
+            <p id="result"></p>
         </div>
     </section>
 
